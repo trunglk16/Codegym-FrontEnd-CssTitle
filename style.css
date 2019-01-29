@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    grid-template-rows: 2fr 5fr 1fr;
+    grid-template-areas: "Header Header" "SideBar Main" "Footer Footer";
+    height: 100vh;
+    grid-gap: 5px;
+    position: relative;
+}
+
+#header {
+    grid-area: Header;
+    background: #eda484;
+}
+
+
+#sidebar {
+    grid-area: SideBar;
+    background: #6effd8;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    position: fixed;
+    top: 50px;
+    width: 200px;
+}
+
+#sidebar a {
+    position: relative;
+    top: 20px;
+}
+#sidebar label {
+    position: relative;
+    text-align: center;
+    top: 5px;
+}
+
+#main {
+    grid-area: Main;
+    background: white;
+}
+#main p,h5{
+    color: black;
+}
+
+#footer {
+    grid-area: Footer;
+    background: #ffd964;
+}
